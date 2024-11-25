@@ -37,16 +37,15 @@ body {
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0px 0px 23px 13px #c87bee48;
     border-radius: 20px;
-
+    width: 70vw;
 }
 
 .conteudo {
-    animation: deslocamentoEsq 1.3s;
+    width: 100%;
 }
+
 
 .conteudo.primeiro {
     display: flex;
@@ -62,7 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--roxo-default);
-    width: 400px;
+    width: 50%;
     height: 33pc;
     color: #fffffd;
     border-top-left-radius: 20px;
@@ -90,7 +89,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    width: 650px;
+    width: 80%;
     height: 33pc;
     gap: 20px;
     border-top-right-radius: 20px;
@@ -227,4 +226,19 @@ form .btn:hover {
     text-indent: 10px;
     margin-top: 7px;
     color: var(--color-error);
+}
+
+@keyframes toeqs {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.conteudo.primeiro,
+.conteudo.segundo {
+    animation: toeqs 1.3s;
 }

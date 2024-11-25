@@ -1,0 +1,64 @@
+/*cell*/
+@media screen and (max-width:650px) {
+    .container {
+        width: 90vw;
+    }
+}
+
+
+
+/*tablet*/
+@media screen and (max-width:1208px) {
+
+
+    .conteudo.primeiro,
+    .conteudo.segundo {
+        flex-direction: column;
+    }
+
+    .conteudo.segundo {
+        flex-direction: column-reverse;
+    }
+
+    .conteudo.primeiro .coluna-1 {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+        height: 40%;
+
+    }
+
+    .conteudo.segundo .coluna-1 {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0px;
+        height: 40%;
+
+    }
+
+    .conteudo.primeiro .coluna-2 {
+        border-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+
+
+    }
+
+    .conteudo.segundo .coluna-2 {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+
+    }
+
+    .conteudo .btn {
+        font-size: 16px;
+    }
+
+
+}
